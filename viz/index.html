@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Crime in Seattle</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Top 5 Crime Offense Type in Seattle 2018 - 2023</h1>
+        <b>Select the offense type:</b>
+            <select class="crime_type" id="crimeSelect" onchange="onCategoryChanged()" >
+	    	<option value="Larceny-theft" selected>Larceny-theft</option>
+	    	<option value="Assault Offenses">Assault Offenses</option>
+	    	<option value="Burglary">Burglary</option>
+        <option value="Destruction">Destruction</option>
+        <option value="Motor Vehicle Theft">Motor Vehicle Theft</option>
+	    </select>
+         <div id="vis">
+            <button id="play-button">Play</button>
+            <svg width="1500" height="700" class = "temperature">
+            </svg>
+          </div>
+    </div>
+</body>
+<footer>CLAB - Datathon 2023</footer>
+<script src="//d3js.org/d3.v5.min.js"></script>
+<script src="./d3-tip.js"></script>
+<script src="./main.js"></script>
+</html>
